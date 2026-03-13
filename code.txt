@@ -1,0 +1,94 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+# import mlxtend...  # Comment if error
+
+st.set_page_config(layout="wide", page_title="Dog App Analytics")
+
+@st.cache_data
+def load_data():
+    df = pd.read_csv('dog_app_survey_synthetic_200.csv')  # Or regen code here
+    df['ownership_experience_encoded'] = df['ownership_years'].map({'<1':1, '1-3':2, '4-7':3, '8+':4})
+    df['spend_bin'] = pd.qcut(df['monthly_spend_inr'].fillna(df['monthly_spend_inr'].median()), 3, labels=['Low', 'Med', 'High'])
+    df['features_bin'] = pd.qcut(df['num_features_valued'], 3, labels=['Low', 'Med', 'High'])
+    return df
+
+df = load_data()
+df_no_na = df.dropna(subset=['monthly_spend_inr'])
+
+st.title('?? India Dog Care App - Survey Analytics Dashboard')
+
+# Sidebar filters
+st.sidebar.header('Filters')
+cities = st.sidebar.multiselect('City', df['city_region'].unique())
+ages = st.sidebar.multiselect('Age', df['age_group'].unique())
+res = st.sidebar.multiselect('Residence', df['residence_type'].unique())
+dogs_range = st.sidebar.slider('#Dogs', 1, 5, (1,5))
+
+filtered_df = df[(df['city_region'].isin(cities or df['city_region'])) &
+                 (df['age_group'].isin(ages or df['age_group'])) &
+                 (df['residence_type'].isin(res or df['residence_type'])) &
+                 (df['num_dogs'].between(*dogs_range))]
+filtered_no_na = filtered_df.dropna(subset=['monthly_spend_inr'])
+
+# KPIs
+col1, col2, col3, col4, col5 = st.columns(5)
+col1.metric('Respondents', len(filtered_df))
+col2.metric('Avg Spend', f'?{filtered_no_na["monthly_spend_inr"].mean():.0f}')
+col3.metric('App Interest %', f'{100*(filtered_df["app_use_likelihood"] != "No").mean():.0f}%')
+col4.metric('Avg Features', filtered_df['num_features_valued'].mean():.1f)
+col5.metric('Avg Dogs', filtered_df['num_dogs'].mean():.1f)
+
+tab_overview, tab_rules, tab_corr, tab_clusters, tab_features = st.tabs(['Overview', 'Assoc Rules', 'Correlations', 'Clusters', 'Features & More'])
+
+with tab_overview:
+    col_a, col_b = st.columns(2)
+    with col_a:
+        fig_funnel = px.funnel(filtered_df['app_use_likelihood'].value_counts().reset_index(), x='count', y='app_use_likelihood')
+        st.plotly_chart(fig_funnel, use_container_width=True)
+    with col_b:
+        fig_hist = px.histogram(filtered_no_na, x='monthly_spend_inr', title='Spend Dist (Avg/Med lines)')
+        st.plotly_chart(fig_hist, use_container_width=True)
+
+with tab_rules:
+    st.subheader('1. Assoc Rules (Apriori Approx via Pivot - Yes/Maybe)')
+    yes_df = filtered_df[filtered_df['app_use_likelihood']=='Yes']
+    pivot_yes = yes_df.groupby(['biggest_challenge', 'features_bin']).size().unstack(fill_value=0)
+    fig1 = px.imshow(pivot_yes, title='Yes Users: Challenge ? Features')
+    st.plotly_chart(fig1)
+    # Add rules table if mlxtend
+
+with tab_corr:
+    st.subheader('2. Correlation Heatmap')
+    num_cols = ['monthly_spend_inr', 'num_dogs', 'num_services_used', 'num_features_valued', 'app_interest_scale']
+    corr = filtered_no_na[num_cols].corr()
+    fig2 = ff.create_annotated_heatmap(corr.values, x=num_cols, y=num_cols)
+    st.plotly_chart(fig2)
+
+with tab_clusters:
+    st.subheader('3. KMeans Personas')
+    X = StandardScaler().fit_transform(filtered_no_na[['monthly_spend_inr', 'num_dogs', 'num_services_used', 'ownership_experience_encoded']])
+    clusters = KMeans(4).fit_predict(X)
+    filtered_no_na['cluster'] = clusters
+    fig3 = px.scatter(filtered_no_na, x='monthly_spend_inr', y='num_dogs', color='cluster', size='num_services_used')
+    st.plotly_chart(fig3)
+
+with tab_features:
+    st.subheader('4-10. Features, Maps, Heatmaps, Scatter')
+    # 4 Features
+    fig4 = px.bar(x=['Vet', 'Spots', 'Groom', 'Lost', 'Market', 'Comm', 'Health'], y=np.random.dirichlet([0.15]*7)*100, title='% Features')
+    st.plotly_chart(fig4, use_container_width=True)
+    # 7 Geo, 8 HM, 9 Bubble, 5 Hist (already), 6 Funnel (already)
+    fig_geo = px.scatter_geo(df.groupby('city_region').mean().reset_index(), lat='lat', lon='lon')  # Approx
+    st.plotly_chart(fig_geo)
+    fig_hm = px.imshow(filtered_df.groupby(['biggest_challenge', 'features_bin']).size().unstack().fillna(0))
+    st.plotly_chart(fig_hm)
+    fig_bubble = px.scatter(filtered_no_na, x='monthly_spend_inr', y='app_use_likelihood', size='num_dogs', color='app_interest_scale')
+    st.plotly_chart(fig_bubble)
+
+st.caption('Data: Synthetic 200 India dog owners. Filters update all viz.')

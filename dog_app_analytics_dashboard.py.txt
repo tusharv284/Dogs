@@ -1,0 +1,81 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+st.set_page_config(layout="wide", page_title="?? Dog App Analytics", initial_sidebar_state="expanded")
+
+@st.cache_data
+def generate_data():
+    np.random.seed(42)
+    n = 200
+    data = {}
+    data['age_group'] = np.random.choice(['18-24', '25-34', '35-44', '45-54', '55+'], n, p=[0.15, 0.35, 0.25, 0.15, 0.1])
+    cities = ['Mumbai', 'Delhi', 'Bangalore', 'Chennai', 'Hyderabad', 'Pune', 'Kolkata', 'Ahmedabad', 'Jaipur', 'Chandigarh', 'Tier2']
+    data['city_region'] = np.random.choice(cities, n, p=[0.12]*6 + [0.06]*4 + [0.1])
+    data['residence_type'] = np.random.choice(['Apartment', 'House', 'Other'], n, p=[0.6, 0.35, 0.05])
+    data['num_dogs'] = np.random.poisson(1.2, n).clip(1,5)
+    data['ownership_years'] = np.random.choice(['<1', '1-3', '4-7', '8+'], n, p=[0.2, 0.4, 0.25, 0.15])
+    data['biggest_challenge'] = np.random.choice(['Housing', 'Vets', 'Grooming', 'Training', 'Travel', 'Other'], n, p=[0.25, 0.25, 0.2, 0.15, 0.1, 0.05])
+    data['num_services_used'] = np.random.choice([0,1,2,3,4,5], n, p=[0.15, 0.25, 0.25, 0.2, 0.1, 0.05])
+    base_spend = np.random.lognormal(8.3, 0.6, n)
+    spend_mod = np.where(np.array(data['age_group'])=='55+', 1.5, np.where(np.array(data['age_group'])=='18-24', 0.8, 1)) * \
+                np.where(np.array(data['residence_type'])=='House', 1.3, 0.9) * np.array(data['num_dogs']) * 0.8
+    data['monthly_spend_inr'] = np.round(base_spend * spend_mod).astype(float)
+    data['monthly_spend_inr'][np.random.choice(n, 6)] = np.nan  # Missing
+    data['monthly_spend_inr'][np.random.choice(n, 10)] *= np.random.uniform(3,8,10)  # Outliers
+    data['num_features_valued'] = np.random.choice([1,2,3,4,5,6,7], n, p=[0.05,0.1,0.2,0.3,0.2,0.1,0.05])
+    data['app_interest_scale'] = np.random.choice([1,2,3,4,5], n, p=[0.05,0.1,0.2,0.35,0.3])
+    prob_yes = np.clip(0.4 + 0.1*(np.array(data['app_interest_scale'])-3)/2 + 0.05*np.array(data['num_features_valued'])/7, 0.1, 0.9)
+    data['app_use_likelihood'] = np.where(np.random.rand(n) < prob_yes, 'Yes', np.where(np.random.rand(n) < 0.3, 'No', 'Maybe'))
+    df = pd.DataFrame(data)
+    df['ownership_experience_encoded'] = df['ownership_years'].map({'<1':1, '1-3':2, '4-7':3, '8+':4})
+    return df
+
+df = generate_data()
+df_no_na = df.dropna(subset=['monthly_spend_inr'])
+
+st.title("India Dog Care App ?? Survey Analytics Dashboard")
+
+# Filters
+st.sidebar.header("?? Filters")
+cities = st.sidebar.multiselect("City", options=sorted(df['city_region'].unique()), default=sorted(df['city_region'].unique()))
+ages = st.sidebar.multiselect("Age Group", options=df['age_group'].unique())
+res_types = st.sidebar.multiselect("Residence", options=df['residence_type'].unique())
+dogs_range = st.sidebar.slider("# Dogs", 1, 5, (1, 5))
+
+filtered_df = df[
+    (df['city_region'].isin(cities)) &
+    (df['age_group'].isin(ages)) &
+    (df['residence_type'].isin(res_types)) &
+    (df['num_dogs'].between(dogs_range[0], dogs_range[1]))
+].copy()
+filtered_no_na = filtered_df.dropna(subset=['monthly_spend_inr'])
+
+# KPIs
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("?? Respondents", len(filtered_df))
+col2.metric("?? Avg Spend", f"?{filtered_no_na['monthly_spend_inr'].mean():,.0f}")
+col3.metric("?? App Interest", f"{(filtered_df['app_use_likelihood'] != 'No').mean()*100:.0f}%")
+col4.metric("? Avg Features", f"{filtered_df['num_features_valued'].mean():.1f}")
+
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["?? Overview", "?? Assoc Rules", "?? Correlations & Clusters", "?? Features & Map", "?? Advanced Viz"])
+
+with tab1:
+    c1, c2 = st.columns(2)
+    with c1:
+        funnel_counts = filtered_df['app_use_likelihood'].value_counts()
+        fig_funnel = px.funnel(funnel_counts.reset_index(), x='count', y='app_use_likelihood', title="6. Adoption Funnel")
+        st.plotly_chart(fig_funnel, use_container_width=True)
+    with c2:
+        fig_hist = px.histogram(filtered_no_na, x='monthly_spend_inr', nbins=25, marginal="box", 
+                                title=f"5. Spend Distribution (Avg ?{filtered_no_na['monthly_spend_inr'].mean():.0f})")
+        st.plotly_chart(fig_hist, use_container_width=True)
+
+with tab2:
+    st.subheader("1. Assoc Rules (Challenge ? Features | Pivot for Yes/Maybe)")
+    yes_filtered
