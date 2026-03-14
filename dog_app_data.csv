@@ -1,0 +1,301 @@
+age_group,region,residence_type,ownership_years,num_dogs,biggest_challenge,app_use_likelihood,num_services_used,num_features_valued,app_interest_scale,monthly_spend_inr
+25-34,North,Apartment,1-3,2,Grooming,No,6,5,1,3484.0
+55+,East,Apartment,<1,1,Grooming,Maybe,2,6,3,839.0
+35-44,East,Apartment,1-3,1,Vet Access,Yes,2,1,2,1767.0
+25-34,West,Apartment,4-7,1,Food Quality,Yes,4,6,8,2887.0
+18-24,West,Apartment,1-3,1,Food Quality,Yes,4,1,6,805.0
+18-24,Central,Independent House,8+,2,Food Quality,Maybe,6,6,9,7891.0
+18-24,East,Apartment,8+,2,Grooming,Maybe,4,3,8,7572.0
+45-54,South,Apartment,1-3,1,Grooming,Yes,2,4,10,2324.0
+35-44,West,Independent House,1-3,1,Grooming,Yes,3,4,3,2100.0
+35-44,South,Independent House,1-3,4,Training,Yes,5,1,5,7015.0
+18-24,South,Apartment,4-7,1,Healthcare Cost,Maybe,3,2,7,2988.0
+55+,North,Villa,1-3,1,Training,Maybe,3,7,5,
+45-54,North,Independent House,4-7,1,Finding Pet-Friendly Places,Yes,2,5,8,2166.0
+18-24,Central,Apartment,1-3,2,Vet Access,Yes,3,5,5,3041.0
+18-24,West,Villa,4-7,2,Vet Access,Yes,6,1,1,4981.0
+18-24,West,PG/Hostel,1-3,1,Vet Access,No,1,6,5,2989.0
+25-34,South,Apartment,1-3,1,Training,Yes,4,2,4,758.0
+25-34,North,Apartment,8+,2,Healthcare Cost,Maybe,1,3,6,5825.0
+25-34,North,Villa,4-7,2,Vet Access,Maybe,5,6,3,5031.0
+25-34,South,Independent House,<1,1,Finding Pet-Friendly Places,Yes,4,6,5,
+35-44,East,Apartment,8+,3,Vet Access,Yes,3,1,2,10638.0
+18-24,West,Apartment,1-3,1,Finding Pet-Friendly Places,Yes,5,1,6,1945.0
+25-34,West,Apartment,8+,1,Food Quality,Maybe,4,5,6,3321.0
+25-34,South,Independent House,4-7,3,Vet Access,Maybe,6,1,5,8541.0
+25-34,Central,Independent House,1-3,1,Grooming,Maybe,6,1,6,500.0
+35-44,West,Apartment,<1,2,Food Quality,Yes,6,1,7,1437.0
+18-24,East,Independent House,1-3,1,Food Quality,Yes,6,5,5,1667.0
+25-34,West,Independent House,4-7,1,Food Quality,No,3,3,1,1135.0
+25-34,South,Apartment,4-7,4,Healthcare Cost,Maybe,1,3,8,9659.0
+18-24,South,Apartment,1-3,1,Grooming,Yes,4,7,4,3079.0
+35-44,South,Independent House,<1,3,Food Quality,No,3,7,9,
+18-24,West,Villa,8+,1,Grooming,Maybe,6,1,10,3684.0
+18-24,North,Independent House,8+,1,Training,Maybe,1,7,6,2491.0
+55+,North,Independent House,4-7,1,Food Quality,Maybe,5,5,1,1956.0
+55+,North,Apartment,1-3,2,Food Quality,Maybe,5,3,3,3199.0
+45-54,North,Apartment,1-3,1,Vet Access,Maybe,5,6,3,1495.0
+25-34,Central,Independent House,<1,2,Vet Access,Yes,6,3,10,3125.0
+18-24,West,Apartment,8+,1,Training,Yes,5,3,4,3946.0
+35-44,East,Apartment,<1,4,Vet Access,No,2,5,6,3310.0
+25-34,North,Apartment,4-7,1,Grooming,Yes,4,7,7,2647.0
+18-24,East,Apartment,1-3,2,Training,Yes,4,6,10,3898.0
+25-34,East,Apartment,4-7,2,Vet Access,Yes,6,5,4,5812.0
+18-24,North,Apartment,4-7,2,Grooming,Yes,2,1,6,6164.0
+45-54,South,Apartment,8+,2,Food Quality,Maybe,3,4,1,
+25-34,South,Apartment,1-3,2,Finding Pet-Friendly Places,No,3,3,8,2851.0
+35-44,West,Villa,<1,2,Grooming,Yes,5,4,7,1093.0
+25-34,West,Independent House,<1,1,Healthcare Cost,Yes,1,5,9,862.0
+25-34,North,Independent House,8+,1,Grooming,Yes,3,5,3,3873.0
+25-34,South,Villa,8+,3,Vet Access,No,1,5,2,11289.0
+18-24,West,Independent House,4-7,2,Training,Maybe,4,4,1,4839.0
+55+,East,Apartment,4-7,2,Finding Pet-Friendly Places,Yes,1,5,3,4644.0
+35-44,Central,Independent House,4-7,1,Grooming,Maybe,4,1,5,2571.0
+55+,West,Independent House,1-3,1,Healthcare Cost,No,2,5,2,1081.0
+45-54,North,Independent House,8+,1,Healthcare Cost,Maybe,2,2,3,5171.0
+25-34,North,Apartment,1-3,2,Vet Access,No,6,7,4,2213.0
+55+,West,Apartment,1-3,1,Vet Access,Yes,6,4,7,1897.0
+18-24,North,Apartment,4-7,1,Grooming,Maybe,5,2,3,4068.0
+18-24,East,Apartment,<1,1,Food Quality,Yes,3,5,9,1055.0
+18-24,Central,Independent House,1-3,1,Healthcare Cost,Maybe,5,1,8,1597.0
+25-34,East,Independent House,4-7,1,Healthcare Cost,Maybe,4,3,4,
+25-34,South,Apartment,<1,1,Food Quality,Maybe,5,6,1,905.0
+25-34,West,PG/Hostel,4-7,2,Vet Access,Maybe,1,7,1,5998.0
+45-54,East,Independent House,1-3,1,Healthcare Cost,Yes,4,6,1,500.0
+25-34,East,Apartment,1-3,1,Food Quality,Yes,6,5,1,2976.0
+25-34,Central,Apartment,1-3,1,Healthcare Cost,No,2,7,8,610.0
+25-34,South,Apartment,1-3,1,Food Quality,No,6,7,3,1536.0
+18-24,Central,Apartment,4-7,1,Training,Yes,3,1,6,2106.0
+45-54,Central,Apartment,1-3,1,Vet Access,Yes,4,7,3,2220.0
+18-24,North,Apartment,4-7,2,Grooming,Yes,4,4,5,3621.0
+55+,North,Apartment,1-3,1,Grooming,Maybe,1,2,7,2119.0
+35-44,North,Apartment,4-7,2,Grooming,Maybe,3,2,2,6519.0
+18-24,North,Villa,8+,2,Vet Access,Yes,2,2,6,5909.0
+18-24,North,Apartment,4-7,2,Training,Yes,4,4,6,5051.0
+45-54,West,Independent House,1-3,1,Healthcare Cost,Maybe,4,6,3,1220.0
+35-44,North,Apartment,<1,1,Vet Access,Maybe,1,1,6,
+35-44,South,PG/Hostel,1-3,1,Vet Access,Yes,5,7,10,1765.0
+35-44,West,Apartment,4-7,1,Vet Access,Maybe,2,4,10,1936.0
+18-24,North,Apartment,<1,4,Training,Yes,6,2,5,4590.0
+25-34,West,PG/Hostel,1-3,1,Grooming,Yes,3,5,2,3193.0
+18-24,South,Villa,4-7,1,Grooming,Maybe,4,3,9,2297.0
+45-54,North,Villa,1-3,2,Vet Access,Maybe,4,7,8,4075.0
+35-44,West,Apartment,4-7,2,Food Quality,No,6,4,3,3865.0
+25-34,West,Apartment,<1,1,Grooming,Maybe,2,4,8,500.0
+18-24,Central,Independent House,<1,1,Grooming,Maybe,5,1,9,1427.0
+25-34,West,PG/Hostel,4-7,1,Finding Pet-Friendly Places,Yes,4,1,3,3637.0
+25-34,West,Independent House,1-3,1,Vet Access,Yes,2,4,3,
+35-44,South,Independent House,4-7,1,Training,Yes,6,2,2,2199.0
+35-44,North,Apartment,1-3,1,Food Quality,Yes,1,3,8,1749.0
+45-54,West,Villa,1-3,1,Food Quality,Maybe,5,7,10,749.0
+25-34,West,Apartment,8+,1,Training,No,3,1,1,3983.0
+18-24,Central,Apartment,4-7,1,Training,Yes,4,7,8,3155.0
+35-44,South,Apartment,4-7,1,Finding Pet-Friendly Places,Yes,2,2,7,2088.0
+35-44,South,Independent House,1-3,1,Vet Access,Maybe,1,7,7,1373.0
+25-34,West,Apartment,4-7,2,Vet Access,Yes,3,5,3,5112.0
+35-44,South,Apartment,1-3,2,Training,Maybe,2,1,1,3150.0
+25-34,Central,Independent House,<1,1,Grooming,Maybe,2,2,4,997.0
+25-34,Central,Apartment,8+,1,Food Quality,Maybe,3,2,9,5179.0
+25-34,South,Independent House,<1,1,Vet Access,Yes,1,3,5,852.0
+18-24,West,Apartment,8+,2,Vet Access,Yes,6,3,1,6713.0
+18-24,West,Independent House,1-3,2,Healthcare Cost,Maybe,1,5,5,2981.0
+18-24,North,Independent House,1-3,1,Vet Access,Maybe,5,2,8,2345.0
+35-44,Central,Apartment,4-7,3,Food Quality,Yes,4,6,8,7205.0
+25-34,East,Apartment,8+,1,Vet Access,Maybe,3,2,5,2980.0
+25-34,West,Apartment,4-7,1,Food Quality,Yes,6,3,9,3507.0
+45-54,South,Apartment,8+,2,Vet Access,Maybe,3,6,1,
+18-24,Central,PG/Hostel,4-7,2,Grooming,Yes,3,1,4,4419.0
+25-34,South,Apartment,4-7,2,Vet Access,No,1,1,3,3406.0
+35-44,North,Villa,8+,2,Healthcare Cost,Yes,4,7,2,7806.0
+18-24,Central,Apartment,1-3,1,Vet Access,Yes,5,4,8,1202.0
+18-24,North,Independent House,1-3,2,Grooming,Yes,2,3,7,4132.0
+25-34,South,Villa,1-3,1,Healthcare Cost,Yes,2,4,9,500.0
+18-24,Central,Independent House,8+,3,Training,No,3,6,2,11214.0
+55+,Central,Independent House,8+,1,Grooming,No,4,3,4,2531.0
+45-54,East,Apartment,<1,2,Food Quality,Yes,6,5,6,2684.0
+35-44,West,Apartment,4-7,1,Food Quality,Yes,1,2,3,2461.0
+45-54,South,PG/Hostel,8+,2,Training,Maybe,4,5,8,6236.0
+45-54,South,Villa,1-3,1,Finding Pet-Friendly Places,No,4,6,3,
+18-24,South,PG/Hostel,4-7,2,Training,Maybe,1,3,2,5449.0
+45-54,West,Apartment,8+,1,Grooming,Yes,3,6,3,3584.0
+25-34,West,Independent House,<1,1,Training,Yes,4,2,6,1517.0
+45-54,West,PG/Hostel,4-7,1,Grooming,Maybe,2,1,2,4031.0
+45-54,West,Apartment,1-3,1,Vet Access,Yes,1,1,8,500.0
+25-34,North,Apartment,8+,2,Grooming,Maybe,6,6,1,8293.0
+18-24,East,Independent House,8+,1,Finding Pet-Friendly Places,Yes,5,4,7,
+18-24,North,Independent House,8+,4,Vet Access,Maybe,3,3,2,
+25-34,East,Villa,1-3,1,Training,Yes,1,3,10,685.0
+45-54,South,Apartment,8+,1,Vet Access,Maybe,5,1,6,3348.0
+45-54,Central,Villa,8+,2,Grooming,Yes,5,7,2,7737.0
+18-24,South,Apartment,1-3,2,Vet Access,Maybe,6,5,2,3397.0
+25-34,North,Apartment,8+,1,Grooming,Yes,4,7,10,4708.0
+25-34,North,Apartment,<1,1,Training,Maybe,6,2,8,500.0
+18-24,West,Villa,4-7,2,Food Quality,Maybe,4,5,2,4890.0
+18-24,West,Independent House,1-3,1,Training,Maybe,4,5,7,748.0
+25-34,North,Independent House,<1,4,Healthcare Cost,Maybe,1,6,3,4490.0
+55+,North,Apartment,<1,4,Finding Pet-Friendly Places,Maybe,1,1,8,4909.0
+25-34,West,Villa,4-7,2,Vet Access,Maybe,3,7,7,
+25-34,North,Apartment,1-3,1,Food Quality,Yes,4,7,8,500.0
+35-44,West,Villa,4-7,2,Vet Access,Maybe,5,1,7,5059.0
+25-34,West,Apartment,<1,1,Finding Pet-Friendly Places,Yes,2,7,6,1399.0
+55+,North,Apartment,1-3,1,Finding Pet-Friendly Places,Yes,3,1,7,2073.0
+55+,North,Independent House,4-7,1,Grooming,Yes,1,6,5,3438.0
+25-34,Central,Apartment,4-7,1,Healthcare Cost,Yes,6,4,7,1593.0
+25-34,South,Independent House,1-3,2,Grooming,Maybe,3,5,1,4044.0
+25-34,South,Independent House,4-7,2,Grooming,Maybe,3,6,1,5854.0
+25-34,West,Apartment,8+,2,Vet Access,Maybe,3,3,9,5577.0
+18-24,Central,Villa,4-7,1,Training,Yes,3,2,5,
+35-44,Central,Apartment,1-3,1,Vet Access,Yes,2,4,5,1346.0
+25-34,West,Independent House,<1,1,Healthcare Cost,Yes,6,3,3,984.0
+18-24,South,PG/Hostel,8+,4,Healthcare Cost,Yes,6,5,5,14278.0
+25-34,North,Independent House,<1,1,Training,Yes,6,7,3,660.0
+45-54,West,Apartment,8+,2,Vet Access,Yes,4,1,9,6459.0
+18-24,East,PG/Hostel,4-7,1,Food Quality,Yes,5,5,9,
+18-24,South,Independent House,8+,1,Food Quality,Maybe,6,6,6,2630.0
+25-34,Central,Apartment,4-7,2,Food Quality,Maybe,3,2,1,4031.0
+55+,North,Apartment,8+,1,Vet Access,No,3,6,7,4043.0
+18-24,East,Villa,1-3,2,Finding Pet-Friendly Places,No,6,4,7,2580.0
+35-44,North,Independent House,4-7,3,Grooming,Maybe,6,4,10,7883.0
+35-44,East,Independent House,1-3,1,Food Quality,Yes,3,2,10,2120.0
+18-24,North,Villa,1-3,1,Food Quality,Maybe,4,3,4,500.0
+35-44,North,Villa,4-7,1,Food Quality,Maybe,1,3,8,1907.0
+25-34,North,Apartment,8+,3,Grooming,Yes,1,4,6,11455.0
+35-44,West,Apartment,8+,1,Grooming,Yes,6,4,4,2715.0
+35-44,West,Apartment,4-7,2,Healthcare Cost,Maybe,2,7,4,4528.0
+25-34,East,Independent House,1-3,2,Grooming,Yes,6,1,2,3869.0
+18-24,Central,Apartment,1-3,2,Finding Pet-Friendly Places,Maybe,6,7,2,4126.0
+45-54,South,Independent House,4-7,1,Healthcare Cost,Maybe,1,7,4,2248.0
+25-34,South,Villa,1-3,2,Vet Access,Yes,3,3,5,
+18-24,Central,Villa,<1,3,Finding Pet-Friendly Places,Yes,6,2,8,4287.0
+18-24,South,Apartment,1-3,1,Vet Access,Yes,3,3,6,3141.0
+25-34,Central,Villa,1-3,1,Healthcare Cost,Yes,3,1,4,2533.0
+35-44,North,Apartment,1-3,4,Food Quality,Yes,2,6,7,7068.0
+18-24,Central,Villa,1-3,1,Healthcare Cost,Maybe,3,4,8,1103.0
+25-34,North,Apartment,<1,2,Healthcare Cost,Yes,1,4,2,1435.0
+18-24,Central,Apartment,<1,1,Healthcare Cost,Yes,4,1,7,1468.0
+35-44,East,Villa,8+,1,Healthcare Cost,Yes,4,7,2,3834.0
+18-24,Central,Apartment,1-3,2,Food Quality,No,5,2,2,4621.0
+35-44,North,Apartment,1-3,1,Vet Access,Yes,6,4,8,2270.0
+25-34,East,Independent House,4-7,1,Food Quality,Yes,1,5,2,1247.0
+55+,Central,Independent House,1-3,1,Vet Access,No,3,7,9,2591.0
+18-24,East,Independent House,8+,1,Training,Maybe,4,4,1,2701.0
+25-34,West,Independent House,4-7,1,Food Quality,Yes,1,5,9,2142.0
+18-24,West,Independent House,<1,1,Finding Pet-Friendly Places,Maybe,4,1,1,1250.0
+55+,East,Apartment,1-3,4,Training,Yes,3,1,10,8596.0
+45-54,West,Apartment,8+,1,Healthcare Cost,Yes,4,7,10,5987.0
+25-34,East,Apartment,8+,2,Vet Access,Yes,6,4,2,7485.0
+35-44,Central,PG/Hostel,1-3,1,Healthcare Cost,Yes,6,3,6,1603.0
+45-54,North,Independent House,4-7,2,Finding Pet-Friendly Places,Maybe,5,5,6,5327.0
+25-34,South,Apartment,1-3,1,Grooming,Yes,5,2,1,2460.0
+25-34,Central,Independent House,8+,4,Grooming,Yes,4,4,7,13743.0
+18-24,Central,PG/Hostel,1-3,1,Training,Maybe,1,2,8,3186.0
+18-24,East,Apartment,8+,1,Vet Access,Maybe,6,4,2,3684.0
+45-54,West,Independent House,4-7,1,Grooming,Yes,1,3,8,2848.0
+45-54,South,Independent House,4-7,1,Food Quality,Maybe,1,3,9,2982.0
+35-44,North,Independent House,4-7,1,Vet Access,Yes,4,7,6,2787.0
+25-34,East,Apartment,1-3,1,Food Quality,Maybe,1,7,5,2421.0
+25-34,South,Villa,1-3,2,Vet Access,Maybe,6,3,9,
+35-44,East,PG/Hostel,1-3,1,Vet Access,No,3,6,9,1303.0
+45-54,North,Independent House,1-3,1,Vet Access,Yes,5,3,1,869.0
+45-54,Central,Independent House,4-7,2,Finding Pet-Friendly Places,Yes,3,1,3,5251.0
+35-44,Central,PG/Hostel,1-3,2,Grooming,Yes,1,1,9,4123.0
+35-44,West,Independent House,<1,1,Finding Pet-Friendly Places,Yes,3,6,2,1416.0
+18-24,East,Apartment,8+,1,Food Quality,Yes,6,5,4,4839.0
+18-24,South,Independent House,8+,1,Food Quality,No,6,2,4,3495.0
+45-54,West,Independent House,8+,2,Grooming,Yes,1,4,2,7534.0
+35-44,West,Apartment,8+,2,Food Quality,Yes,4,4,3,6126.0
+18-24,North,Independent House,1-3,1,Vet Access,Maybe,3,6,3,
+18-24,Central,PG/Hostel,1-3,2,Training,Yes,4,1,1,4056.0
+35-44,West,PG/Hostel,4-7,2,Vet Access,Maybe,4,7,6,5579.0
+18-24,Central,Independent House,4-7,1,Grooming,Yes,2,4,8,2214.0
+18-24,West,Apartment,1-3,2,Training,Yes,1,1,3,
+25-34,West,PG/Hostel,8+,1,Vet Access,Yes,5,5,5,2285.0
+35-44,South,Villa,1-3,1,Vet Access,Yes,6,2,1,1464.0
+35-44,Central,Apartment,1-3,1,Healthcare Cost,No,6,5,10,2462.0
+18-24,Central,PG/Hostel,4-7,1,Grooming,Yes,1,6,7,2910.0
+35-44,North,Villa,4-7,1,Vet Access,Yes,5,3,10,2850.0
+18-24,North,Independent House,4-7,3,Finding Pet-Friendly Places,Yes,6,3,1,7389.0
+25-34,South,Independent House,<1,1,Vet Access,Yes,1,3,9,1055.0
+35-44,West,Apartment,8+,1,Training,No,6,5,8,2971.0
+35-44,Central,Apartment,1-3,1,Finding Pet-Friendly Places,Yes,4,4,7,2309.0
+45-54,North,Apartment,<1,3,Vet Access,Maybe,3,2,10,3486.0
+35-44,East,Villa,8+,1,Vet Access,No,3,3,7,3893.0
+25-34,South,Apartment,8+,1,Vet Access,Maybe,6,6,5,3079.0
+18-24,Central,Apartment,8+,1,Food Quality,No,2,6,5,1777.0
+25-34,West,Apartment,8+,1,Vet Access,Yes,5,3,5,4377.0
+25-34,West,Independent House,4-7,4,Training,Yes,5,3,1,9416.0
+18-24,East,PG/Hostel,4-7,4,Vet Access,Yes,5,2,8,9109.0
+55+,South,Apartment,<1,1,Grooming,Maybe,4,3,1,1604.0
+25-34,South,Apartment,1-3,3,Finding Pet-Friendly Places,No,5,2,4,4936.0
+45-54,North,Independent House,1-3,2,Healthcare Cost,Yes,3,6,9,
+35-44,Central,Independent House,1-3,2,Grooming,Maybe,4,3,9,3993.0
+35-44,West,Apartment,4-7,1,Food Quality,Yes,1,5,5,2996.0
+25-34,Central,Independent House,1-3,1,Grooming,Maybe,5,7,4,657.0
+25-34,Central,Apartment,<1,1,Grooming,Yes,5,5,3,2019.0
+25-34,East,Apartment,1-3,2,Food Quality,No,1,6,3,3709.0
+18-24,West,Independent House,4-7,1,Vet Access,Maybe,5,2,5,2154.0
+35-44,Central,Apartment,<1,1,Healthcare Cost,Yes,1,5,10,1164.0
+25-34,West,PG/Hostel,8+,1,Food Quality,Yes,4,2,1,2079.0
+18-24,South,Apartment,1-3,2,Vet Access,Yes,3,5,5,3826.0
+35-44,East,Independent House,1-3,1,Food Quality,Yes,1,5,6,926.0
+18-24,North,Independent House,4-7,2,Food Quality,Yes,2,2,7,3817.0
+55+,Central,Apartment,8+,4,Healthcare Cost,No,1,4,9,12782.0
+55+,West,Independent House,1-3,1,Training,Maybe,5,5,3,2640.0
+45-54,South,Apartment,4-7,2,Training,Yes,4,3,2,
+25-34,West,PG/Hostel,4-7,1,Vet Access,Yes,6,7,3,3676.0
+18-24,West,Apartment,1-3,2,Food Quality,No,4,6,9,3071.0
+55+,South,Apartment,8+,1,Grooming,Maybe,6,4,7,2134.0
+25-34,North,Apartment,4-7,2,Vet Access,Yes,1,2,9,4006.0
+55+,West,PG/Hostel,4-7,2,Food Quality,Maybe,3,4,2,5888.0
+55+,East,Independent House,8+,3,Training,Yes,2,1,5,10375.0
+45-54,West,Independent House,8+,2,Vet Access,Yes,4,1,4,6561.0
+25-34,East,Apartment,4-7,1,Grooming,Yes,5,5,2,2578.0
+25-34,Central,Independent House,8+,2,Vet Access,Yes,6,5,9,7401.0
+45-54,East,Apartment,4-7,2,Vet Access,Yes,5,3,9,5793.0
+25-34,East,Villa,4-7,1,Vet Access,No,3,7,6,3608.0
+18-24,Central,Apartment,4-7,1,Finding Pet-Friendly Places,Maybe,6,6,6,2162.0
+25-34,South,Apartment,4-7,3,Healthcare Cost,Maybe,4,4,8,6289.0
+55+,North,Apartment,1-3,2,Finding Pet-Friendly Places,Yes,1,1,6,3169.0
+35-44,North,Independent House,8+,2,Grooming,Yes,5,5,1,7208.0
+25-34,West,Independent House,8+,1,Vet Access,Maybe,3,6,4,2728.0
+18-24,West,Apartment,<1,2,Grooming,Yes,4,4,7,1334.0
+35-44,West,Villa,8+,1,Grooming,Yes,4,5,2,3775.0
+55+,South,Independent House,<1,2,Healthcare Cost,Yes,4,5,9,2061.0
+18-24,North,Independent House,1-3,1,Vet Access,Maybe,4,1,8,1776.0
+25-34,North,Apartment,4-7,2,Grooming,Yes,6,1,8,4293.0
+45-54,South,Apartment,1-3,4,Vet Access,Yes,4,5,7,6815.0
+35-44,East,Independent House,8+,1,Food Quality,Maybe,5,2,4,2760.0
+35-44,South,Apartment,8+,4,Training,Yes,3,5,2,14712.0
+35-44,South,Apartment,4-7,1,Grooming,Yes,6,6,3,3278.0
+25-34,Central,Villa,<1,2,Food Quality,Yes,4,5,6,623.0
+25-34,South,PG/Hostel,1-3,2,Food Quality,Yes,2,3,5,2756.0
+45-54,East,Apartment,4-7,1,Grooming,Maybe,2,7,8,1252.0
+45-54,West,Apartment,8+,2,Healthcare Cost,Yes,3,3,6,
+45-54,South,Independent House,4-7,2,Healthcare Cost,Yes,1,3,6,4833.0
+45-54,West,Apartment,1-3,1,Finding Pet-Friendly Places,No,1,2,1,590.0
+25-34,Central,Apartment,4-7,1,Healthcare Cost,No,6,2,4,1712.0
+25-34,Central,Apartment,4-7,2,Food Quality,No,6,5,5,4096.0
+35-44,North,Independent House,4-7,2,Training,Yes,6,3,3,
+35-44,Central,Independent House,<1,2,Food Quality,Yes,1,2,9,
+35-44,East,Apartment,4-7,2,Food Quality,No,2,1,1,4322.0
+35-44,South,Apartment,4-7,1,Healthcare Cost,Maybe,1,5,6,2591.0
+45-54,East,Apartment,8+,2,Vet Access,Yes,5,6,6,
+25-34,Central,Independent House,1-3,1,Healthcare Cost,Yes,4,7,10,1532.0
+25-34,East,Apartment,4-7,1,Grooming,Yes,6,4,5,3788.0
+18-24,South,Apartment,8+,1,Training,No,2,5,5,4572.0
+25-34,West,Villa,<1,1,Training,Yes,3,4,10,500.0
+18-24,South,Apartment,8+,1,Healthcare Cost,Yes,3,3,5,4163.0
+25-34,North,Independent House,4-7,1,Training,Yes,4,7,6,3099.0
+25-34,North,Apartment,<1,2,Grooming,Maybe,2,4,8,1181.0
+25-34,North,Apartment,1-3,1,Vet Access,Maybe,1,3,2,2405.0
+25-34,North,Apartment,4-7,1,Grooming,Yes,1,1,6,3680.0
+18-24,North,Independent House,<1,1,Vet Access,Maybe,5,4,1,500.0
+18-24,West,Villa,4-7,1,Training,No,5,7,4,1715.0
+45-54,North,Villa,1-3,1,Grooming,Yes,1,5,10,2564.0
+25-34,South,Apartment,4-7,1,Training,Yes,3,3,3,2667.0
+18-24,Central,Independent House,<1,2,Vet Access,Yes,6,5,9,2541.0
+25-34,East,Apartment,8+,2,Vet Access,Maybe,3,7,3,7272.0
+35-44,West,Apartment,8+,2,Training,Maybe,5,2,6,7312.0
+18-24,North,Villa,8+,1,Vet Access,Maybe,4,3,1,2438.0
+35-44,North,Apartment,4-7,1,Vet Access,Maybe,1,4,6,3287.0
+18-24,North,Apartment,<1,2,Vet Access,Yes,5,3,4,3035.0
